@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Header Modifier",
+  "version": "1.0",
+  "description": "Модифицирует заголовки GET-запросов для определённых сайтов.",
+  "permissions": [
+    "declarativeNetRequest"
+  ],
+  "host_permissions": [
+    "https://animego.org/*",
+    "https://animego.me/*"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  }
+}

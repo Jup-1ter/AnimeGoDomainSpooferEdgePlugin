@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "Referer",
+          "operation": "set",
+          "value": "https://animego.org/"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "animego.org",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  },
+  {
+    "id": 2,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "requestHeaders": [
+        {
+          "header": "Referer",
+          "operation": "set",
+          "value": "https://animego.me/"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "animego.me",
+      "resourceTypes": ["main_frame", "sub_frame"]
+    }
+  }
+]
